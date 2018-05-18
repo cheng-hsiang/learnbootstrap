@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+    <style>
+        .header {
+            min-height: 100vh;
+            background-image: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjF9&s=1cee97e5a265f41fd8e02590ccecfc7c&auto=format&fit=crop&w=1350&q=80);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+        }
+
+        .skillbar {
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .progress-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 20px;
+        }
+
+        .progress {
+            height: 10px;
+            background: #333;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 30px;
+            overflow: visible;
+        }
+
+        .progress .progress-bar {
+            position: relative;
+            -webkit-animation: animate-positive 2s;
+            animation: animate-positive 2s;
+        }
+
+
+
+        .progress .progress-value {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            position: absolute;
+            top: -30px;
+            right: -25px;
+        }
+
+        @-webkit-keyframes animate-positive {
+            0% {
+                width: 0;
+            }
+        }
+
+        @keyframes animate-positive {
+            0% {
+                width: 0;
+            }
+        }
+
+        .demopadding {
+            margin: 50px auto;
+            width: 140px;
+            text-align: center;
+        }
+
+        .icon {
+            position: relative;
+            text-align: center;
+            width: 0px;
+            height: 0px;
+            padding: 20px;
+            border-top-right-radius: 35px;
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            border-bottom-left-radius: 35px;
+            -moz-border-radius: 35px 35px 35px 35px;
+            -webkit-border-radius: 35px 35px 35px 35px;
+            -khtml-border-radius: 35px 35px 35px 35px;
+            color: #FFFFFF;
+        }
+
+        .icon i {
+            font-size: 35px;
+            position: absolute;
+            left: 9px;
+            top: 10px;
+        }
+
+        .icon.social {
+            float: left;
+            margin: 0 5px 0 0;
+            cursor: pointer;
+            background: #6d6e71;
+            color: #262626;
+            transition: 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+
+        .icon.social:hover {
+            background: #262626;
+            color: #6d6e71;
+            transition: 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+            -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+            -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+            -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+            filter: drop-shadow(0 1px 10px rgba(0, 0, 0, .8));
+        }
+
+        .icon.social.fb i {
+            left: 11px;
+            top: 9px;
+        }
+
+        .icon.social.tw i {
+            left: 4px;
+            top:4px;
+        }
+
+        .icon.social.in i {
+            left: 8px;
+            top:4px;
+        }
+           .icon.social.git i {
+            left: 5px;
+            top:4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header d-flex justify-content-center align-items-center">
+        <div calss='text-center text-white'>
+            <h1 class='text-white'>Welcome</h1>
+            <h2 class='text-white'>We create beautiful graphics</h2>
+            <a href="" class="btn btn-outline-info">get start</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <section class='py-5'>
+        <div class='container'>
+
+
+            <h1 class='text-center'>About me </h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="rounded-circle img-fluid" src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b56cc98130be8cfdaf1f7a1fed8142dc&auto=format&fit=crop&w=1382&q=80"
+                        alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3>
+                        你好我叫程昱翔,資管系畢業,自學前端3個月,對javascript有極高的熱情, 但是沒有美術細胞,很希望能夠參與各式各樣的專案,踏入前端的原因很特別! 一年前為家人設計一個排班Web application但是學三個月就放棄了, 結果一年後又重拾課本開始自我學習的道路,參與了FreeCodeCamp專案,
+                        系統性的學習前端的各式各樣技能,學習的道路永無止境。
+
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class='py-5 skillbar' style="background-image:url(https://images.unsplash.com/photo-1493878777218-cf22a808450c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fdc6d5b8efaa582a6903f9626afac059&auto=format&fit=crop&w=1351&q=80)">
+        <div class='container text-white'>
+            <h1 class='text-center'>My Skill</h1>
+            <div class="col-md-offset-3 col-md-6">
+                <h3 class="progress-title">HTML5</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%; background:#97c513;">
+                        <div class="progress-value">70%</div>
+                    </div>
+                </div>
+
+                <h3 class="progress-title">CSS3</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%; background:#f2545b;">
+                        <div class="progress-value">90%</div>
+                    </div>
+                </div>
+
+                <h3 class="progress-title">J-Query</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width:55%; background:#ffc304;">
+                        <div class="progress-value">55%</div>
+                    </div>
+                </div>
+
+                <h3 class="progress-title">Bootstrap</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%; background:#2e9dc2;">
+                        <div class="progress-value">80%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class='py-5'>
+        <div class='container'>
+
+
+            <h1 class='text-center'>作品集</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="rounded-circle img-fluid" src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b56cc98130be8cfdaf1f7a1fed8142dc&auto=format&fit=crop&w=1382&q=80"
+                        alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3>
+                        你好我叫程昱翔,資管系畢業,自學前端3個月,對javascript有極高的熱情, 但是沒有美術細胞,很希望能夠參與各式各樣的專案,踏入前端的原因很特別! 一年前為家人設計一個排班Web application但是學三個月就放棄了, 結果一年後又重拾課本開始自我學習的道路,參與了FreeCodeCamp專案,
+                        系統性的學習前端的各式各樣技能,學習的道路永無止境。
+
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-4">聯絡我</h2>
+            <div class="row">
+                <div class="col-md-10">
+                    121212
+                </div>
+                <div class="col-md-2">
+                    <div class='icon social fb'>
+                        <i class='fa fa-facebook'></i>
+                        <a href="#"></a>
+                    </div>
+                    <div class='icon social tw'>
+                        <i class='fa fa-twitter'></i>
+                        <a href="#"></a>
+                    </div>
+                    <div class='icon social in'>
+                        <i class='fa fa-linkedin'></i>
+                        <a href="#"></a>
+                    </div>
+                    <div class='icon social git'>
+                        <i class='fa fa-github'></i>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
