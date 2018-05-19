@@ -12,6 +12,9 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Hello,Stranger!</title>
     <style>
+        *{
+            font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+            }
         .header {
             min-height: 100vh;
             background-image: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjF9&s=1cee97e5a265f41fd8e02590ccecfc7c&auto=format&fit=crop&w=1350&q=80);
@@ -19,7 +22,7 @@
             background-position: center center;
             background-attachment: fixed;
             position: relative;
-            top:0;
+            top: 0;
             left: 0;
         }
 
@@ -149,18 +152,20 @@
             left: 8px;
             top: 5px;
         }
-        .arrow{
-            position: absolute; 
-           bottom: 0;
-            left:50%;
+
+        .arrow {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
             margin-left: -32px;
         }
+
         .arrow img {
             -webkit-animation: arrow 1s both infinite;
             animation: arrow 1s both infinite;
         }
- 
-        
+
+
         @-webkit-keyframes arrow {
             0%,
             20%,
@@ -193,18 +198,12 @@
             }
         }
 
-        .typing{
-            width: 250px;
+        .typing {
+            width: 500px;
             white-space: nowrap;
             overflow: hidden;
-            -webkit-animation: dy 2s steps(60, end);
-            animation: dy 2s steps(50, end);
-        }
-
-        @-webkit-keyframes dy {
-            from {
-                width: 0;
-            }
+            -webkit-animation: dy 1.5s steps(60, end) 1;
+            animation: dy 1.5s steps(50, end) 1;
         }
 
         @keyframes dy {
@@ -212,15 +211,20 @@
                 width: 0;
             }
         }
+        
+
+        .displaynone{
+            display: none;
+        }
+         
     </style>
 </head>
 
 <body>
-    <div class="header d-flex justify-content-center align-items-center "style="position:relative;">
+    <div class="header d-flex justify-content-center align-items-center " style="position:relative;">
         <div calss='text-center text-white'>
-            <h1 class='text-white typing'>Welcome</h1>
-            <h2 class='text-white twotext'>I create beautiful website</h2>
-            <h4 class='text-white '>Junior Front End Developer</h4>
+            <h1 class='text-white typing'>Welcome to my website</h1>
+            <h2 class='text-white'>I’m HankCheng, a Junior front end developer</h2>
             <div class="arrow">
                 <a href="#jump">
                     <img src="http://marcelklacan.com/images/icon.png" alt="" />
@@ -228,7 +232,10 @@
             </div>
         </div>
     </div>
+    <script>
   
+    </script>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">Cx</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -254,30 +261,25 @@
                 </li>
 
             </ul>
-            
+
         </div>
     </nav>
     <section class='py-5'>
         <div class='container'>
-            <h1 class='text-center'>About me </h1>
+            <h1 class='text-center'>My profile</h1>
             <div class="row">
-                <div class="col-md-5">
-                    <img class="rounded-circle img-fluid" src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b56cc98130be8cfdaf1f7a1fed8142dc&auto=format&fit=crop&w=1382&q=80"
+                <div class="col-md-6">
+                    <img class="img-fluid rounded" alt="Responsive image" src="https://images.unsplash.com/photo-1480859786001-3f3bfdf20f2c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7f1af7790cff00801c8d104c73a72d78&auto=format&fit=crop&w=700&q=80"
                         alt="">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
 
-                    <h4>
-                        你好我叫程昱翔,國立台北商業大學資管系畢業,自學前端2個月,對javascript有極高的熱情,很希望能夠參與各式各樣的專案,讓人看到我的價值,在校時有接觸過網頁程式,不過沒有持之以恆,
-                        結果一年後又重拾課本開始自我學習的道路,真正了解到何謂為自己而學。
-                    </h4>
+                    <h3>
+                        你好我叫程昱翔,國立台北商業大學資管系畢業,自學前端2個月,對javascript有極高的熱情,很希望能夠參與各式各樣的專案與事物,讓人看到我的價值所在,在校時曾經接觸過網頁程式,不過沒有持之以恆,結果一年後又重拾課本開始自我學習的道路,真正了解到何謂為自己而學。
+                    </h3>
                     <hr>
-                    <h4>性格上較為內向木訥,喜歡新鮮事物,觀看事情會從各個角度與角色去分析,平常的興趣是閱讀小說與打電玩,也因如此所以對Ux有特別的體驗,
-                        在學習程式時熱愛與人交流技術, 
-                        與人聊天總能有新的思路來解決問題,
-                        遇上不能解決的問題時會從頭分析,深信這個世界上沒有不能解決的問題。
-                    </h4>
-
+                    <h3>性格上較為內向木訥,喜歡新鮮事物,觀看事情會從各個角度與角色去分析,平常的興趣是閱讀與電玩,也因如此所以對Ux有特別的體驗, 在學習程式時熱愛與人交流技術, 與人聊天總能有新的思路來解決問題, 遇上不能解決的問題時會從頭分析,深信這個世界上沒有不能解決的問題。
+                    </h3>
                 </div>
 
             </div>
@@ -287,20 +289,7 @@
         <div class='container text-white'>
             <h1 class='text-center text-dark' id='jumpskill'>My Skill</h1>
             <div class="row">
-                <div class="col-md-6 text-dark">
-                    <div class="card">
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">擅長建置頁面架構和布局,會使用BootStrap來製作RWD</li>
-                                <li class="list-group-item">熱愛JavaScript擅長jQuery與特效相關plugin</li>
-                                <li class="list-group-item">對Css3製作動畫很有興趣</li>
-                                <li class="list-group-item">會用Ajax溝通後端並串接</li>
-                                <li class="list-group-item">以photoshop製作網頁所需的圖片</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
                 <div class="col-md-6">
                     <h3 class="progress-title">Html5</h3>
                     <div class="progress">
@@ -329,6 +318,20 @@
                             <div class="progress-value">80%</div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6 text-dark">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">擅長建置頁面架構和布局,會使用BootStrap來製作RWD</li>
+                                <li class="list-group-item">熱愛JavaScript擅長jQuery與特效相關plugin</li>
+                                <li class="list-group-item">對Css3製作動畫很有興趣</li>
+                                <li class="list-group-item">會用Ajax溝通後端並串接</li>
+                                <li class="list-group-item">以photoshop製作網頁所需的圖片</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
