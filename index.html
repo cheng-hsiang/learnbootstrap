@@ -18,7 +18,9 @@
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
-
+            position: relative;
+            top:0;
+            left: 0;
         }
 
         .skillbar {
@@ -148,18 +150,16 @@
             top: 5px;
         }
         .arrow{
-            position: relative;
+            position: relative; 
+            top:300px;
+            left:180px;
         }
         .arrow img {
-           position: relative;
-            margin: 0 auto;
-            display: block;
-            top: 420px;
-            left: -195px;
             -webkit-animation: arrow 1s both infinite;
             animation: arrow 1s both infinite;
         }
  
+        
         @-webkit-keyframes arrow {
             0%,
             20%,
@@ -216,18 +216,16 @@
 
 <body>
     <div class="header d-flex justify-content-center align-items-center "style="position:relative;">
-        <div calss='text-center text-white'>
+        <div calss='text-center text-white'style="position:relative;">
             <h1 class='text-white typing'>Welcome</h1>
             <h2 class='text-white twotext'>I create beautiful website</h2>
             <h4 class='text-white '>Junior Front End Developer</h4>
-
+            <div class="arrow">
+                <a href="#jump">
+                    <img src="http://marcelklacan.com/images/icon.png" alt="" />
+                </a>
+            </div>
         </div>
-        <div class="arrow">
-            <a href="#jump">
-                <img src="http://marcelklacan.com/images/icon.png" alt="" />
-            </a>
-        </div>
-
     </div>
   
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -303,14 +301,14 @@
 
                 </div>
                 <div class="col-md-6">
-                    <h3 class="progress-title">HTML5</h3>
+                    <h3 class="progress-title">Html5</h3>
                     <div class="progress">
                         <div class="progress-bar" style="width:80%; background:#97c513;">
                             <div class="progress-value">80%</div>
                         </div>
                     </div>
 
-                    <h3 class="progress-title">CSS3/RWD</h3>
+                    <h3 class="progress-title">Css3/Rwd</h3>
                     <div class="progress">
                         <div class="progress-bar" style="width:70%; background:#f2545b;">
                             <div class="progress-value">70%</div>
@@ -331,10 +329,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
 
     </section>
